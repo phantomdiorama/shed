@@ -40,7 +40,7 @@ sudo chmod +x /usr/local/bin/shed
 ## usage
 
 ```
-shed.sh [url]
+shed [url]
 ```
 
 ## faq
