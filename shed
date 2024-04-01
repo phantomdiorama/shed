@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ "$1" = "" ]]; then
-    echo "Your name isn't your username"
+    echo "shed requires a url"
 else
     echo "saving webpage"
     # get page title
