@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [[ "$1" = "" ]]; then
+    echo "Your name isn't your username"
+else
+    echo "saving webpage"
+    # get page title
+    article=$(readable $1 -p title | tr -d "[:punct:][:blank:]" | cut -c 1-25)
+    echo $article
+    # download page
+    readable $1 -s style.css -o $article.html --quiet
+    echo -e "\nDONE"
+fi
