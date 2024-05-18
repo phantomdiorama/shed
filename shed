@@ -2,12 +2,11 @@
 
 if [[ "$1" = "" ]]; then
     echo "shed requires a url"
+elif [[ "$1" = "list" ]]; then
+    for file in ~/shed/*.html; do basename "$file"; done
 else
-    echo "saving webpage"
     # get page title
-    article=$(readable $1 -p title | tr -d "[:punct:][:blank:]" | cut -c 1-25)
-    echo $article
+    article=$(readable "$1" -p title | tr -d "[:punct:][:blank:]" | cut -c 1-25)
     # download page
-    readable $1 -s style.css -o ~/shed/$article.html --quiet
-    echo -e "\nDONE"
+    readable "$1" -s style.css -o ~/shed/"$article".html --quiet
 fi

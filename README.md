@@ -40,14 +40,14 @@ sudo chmod +x /usr/local/bin/shed
 ## usage
 
 ```
-shed [url]
+shed [url] <-- add [url] to shed
+shed list  <-- list shedded files
 ```
 
 ## faq
 
 **Why not plaintext:** I like being able to easily style the output with
-css. And sometimes I want the images[^1]. That said, readability-cli can
+css. And sometimes I want the images. That said, readability-cli can
 grab just the page text if you want.
 
-
-[^1]: yes, they’re subject to eventual link-rot, and no, I’m not concerned
+**Couldn’t this just be a gist:** Yes. Yes it could.
