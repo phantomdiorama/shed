@@ -32,8 +32,8 @@ html, and links to a minimal css stylesheet
 cd ~
 git clone https://github.com/phantomdiorama/shed.git
 cd ~/shed
-sudo mv shed /usr/local/bin/shed
-sudo chmod +x /usr/local/bin/shed
+sudo mv shed ~/.local/bin
+sudo chmod +x ~/.local/bin
 
 ```
 
