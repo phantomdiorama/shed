@@ -8,7 +8,7 @@ else
     # get page title
     article=$(readable "$1" -p title    |
             tr "[:upper:]" "[:lower:]"  |
-            tr -d "_!?-"                |
+            sed 's/[$&@!?“”’,-]//g'     |
             tr " " "."                  |
             cut -c 1-64                 |
             tr -s ".")

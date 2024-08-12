@@ -14,11 +14,11 @@ Firefox contained all the guff webpages use to distract you from the
 actual content, making them difficult to skim through. Basically, I wanted
 something better. Something cleaner.
 
-So here’s Shed.sh.
+So here’s *shed*.
 
 It’s a bash script that uses readability-cli to download stripped-down
-html, and links to a minimal css stylesheet
-([spcss](https://susam.github.io/spcss/)).
+pages, links a minimal stylesheet ([spcss](https://susam.github.io/spcss/)
+by default), and creates a html file with human-readable filename.
 
 ## requirements
 
@@ -32,8 +32,8 @@ html, and links to a minimal css stylesheet
 cd ~
 git clone https://github.com/phantomdiorama/shed.git
 cd ~/shed
-sudo mv shed ~/.local/bin
-sudo chmod +x ~/.local/bin
+chmod +x shed
+mv shed ~/.local/bin
 
 ```
 
@@ -47,7 +47,6 @@ shed list  <-- list shedded files
 ## faq
 
 **Why not plaintext:** I like being able to easily style the output with
-css. And sometimes I want the images. That said, readability-cli can
-grab just the page text if you want.
+css. That said, readability-cli can grab just the page text if you want.
 
 **Couldn’t this just be a gist:** Yes. Yes it could.
