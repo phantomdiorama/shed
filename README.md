@@ -1,20 +1,6 @@
 # shed
 
-> A shed is typically a simple, single-story roofed structure, often used
-> for storage, for hobbies, or as a workshop
->
->  -- Wikipedia
-
-I had been keeping my web research as a bunch of pdf files. Mostly because
-it was easy--just *print to pdf* in Firefox.
-
-But there were things I didn’t like: the pdf format is unwieldy, large,
-difficult to grep and unreadable on mobile. And the files created by
-Firefox contained all the guff webpages use to distract you from the
-actual content, making them difficult to skim through. Basically, I wanted
-something better. Something cleaner.
-
-So here’s *shed*.
+So... here’s shed.
 
 It’s a bash script that uses readability-cli to download stripped-down
 pages, links a minimal stylesheet ([spcss](https://susam.github.io/spcss/)
@@ -33,20 +19,17 @@ cd ~
 git clone https://github.com/phantomdiorama/shed.git
 cd ~/shed
 chmod +x shed
-mv shed ~/.local/bin
+mv shed /usr/local/bin #<--or somewhere in $PATH 
 
 ```
 
 ## usage
 
 ```
-shed [url] <-- add [url] to shed
-shed list  <-- list shedded files
+shed [url]  #<--add [url] to shed
+shed list    #<--list shedded files
 ```
 
 ## faq
-
-**Why not plaintext:** I like being able to easily style the output with
-css. That said, readability-cli can grab just the page text if you want.
 
 **Couldn’t this just be a gist:** Yes. Yes it could.
