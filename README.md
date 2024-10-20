@@ -3,8 +3,8 @@
 So... here’s shed.
 
 It’s a bash script that uses readability-cli to download stripped-down
-pages, links a minimal stylesheet ([spcss](https://susam.github.io/spcss/)
-by default), and creates a html file with human-readable filename.
+pages, links a minimal stylesheet ([SPCSS](https://susam.github.io/spcss/)
+by default), and creates a html file with a human-readable filename.
 
 ## requirements
 
@@ -15,11 +15,10 @@ by default), and creates a html file with human-readable filename.
 ## install
 
 ```
-cd ~
 git clone https://github.com/phantomdiorama/shed.git
 cd ~/shed
 chmod +x shed
-mv shed /usr/local/bin #<--or somewhere in $PATH 
+mv shed /usr/local/bin #<--or somewhere in $PATH
 
 ```
 
@@ -30,6 +29,12 @@ shed [url]  #<--add [url] to shed
 shed list    #<--list shedded files
 ```
 
-## faq
+## alternatives
 
-**Couldn’t this just be a gist:** Yes. Yes it could.
+- [Monolith](https://github.com/Y2Z/monolith)
+- [SingleFile](https://github.com/gildas-lormeau/SingleFile)
+- [Pandoc](https://pandoc.org/)
+
+# acknowledgements
+
+SPCSS is licensed under MIT.
