@@ -2,9 +2,9 @@
 
 So... here’s shed.
 
-It’s a bash script that uses readability-cli to download stripped-down
-pages, links a minimal stylesheet ([SPCSS](https://susam.github.io/spcss/)
-by default), and creates a html file with a human-readable filename.
+It’s a bash script that uses readability-cli to download stripped-down pages and creates a html file with a human-readable filename.
+
+The resulting files are **not styled**. However, you can use CSS styling by adding a file called `style.css` to the same directory. I use [SPCSS](https://susam.github.io/spcss/).
 
 ## requirements
 
@@ -15,26 +15,22 @@ by default), and creates a html file with a human-readable filename.
 ## install
 
 ```
-git clone https://github.com/phantomdiorama/shed.git
-cd ~/shed
+wget https://raw.githubusercontent.com/phantomdiorama/shed/refs/heads/main/shed
 chmod +x shed
-mv shed /usr/local/bin #<--or somewhere in $PATH
+mv shed /usr/local/bin # or somewhere in $PATH
 
 ```
 
 ## usage
 
 ```
-shed [url]  #<--add [url] to shed
-shed list    #<--list shedded files
+shed [url]  # add [url] to shed
+shed list   # list shedded files
 ```
 
 ## alternatives
 
 - [Monolith](https://github.com/Y2Z/monolith)
+- [Pandoc](hdttps://pandoc.org/)
 - [SingleFile](https://github.com/gildas-lormeau/SingleFile)
-- [Pandoc](https://pandoc.org/)
-
-# acknowledgements
-
-SPCSS is licensed under MIT.
+- [Wget](https://en.m.wikipedia.org/wiki/Wget) 
