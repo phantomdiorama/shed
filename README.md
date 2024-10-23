@@ -1,10 +1,17 @@
 # shed
 
-So... here’s shed.
+This could have been a Gist.
 
-It’s a bash script that uses readability-cli to download stripped-down pages and creates a html file with a human-readable filename.
+Anyway...
 
-The resulting files are **not styled**. However, you can use CSS styling by adding a file called `style.css` to the same directory. I use [SPCSS](https://susam.github.io/spcss/).
+Here’s shed.
+
+It’s a bash script that uses readability-cli to download stripped-down
+pages and creates a html file with a human-readable filename.
+
+The resulting files are **not styled**. However, you can use CSS styling
+by adding a file called `style.css` to the same directory. I use
+[SPCSS](https://susam.github.io/spcss/).
 
 ## requirements
 
@@ -30,7 +37,7 @@ shed list   # list shedded files
 
 ## alternatives
 
+- [Wget](https://en.m.wikipedia.org/wiki/Wget)
+- [Pandoc](https://pandoc.org/)
 - [Monolith](https://github.com/Y2Z/monolith)
-- [Pandoc](hdttps://pandoc.org/)
 - [SingleFile](https://github.com/gildas-lormeau/SingleFile)
-- [Wget](https://en.m.wikipedia.org/wiki/Wget) 
