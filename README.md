@@ -1,6 +1,6 @@
 # shed
 
-**Unmaintained:** Superseded by   [jones](https://github.com/phantomdiorama/jones). 
+**Unmaintained:** Superseded by   [jones](https://github.com/phantomdiorama/jones).
 
 shed is a bash script that uses readability-cli to download stripped-down
 pages and creates a html file with a human-readable filename.
